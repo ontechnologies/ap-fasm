@@ -1,0 +1,19 @@
+{
+  "name": "ap-fasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ontechnologies/ap-fasm.git"
+  },
+  "author": "Kwizera Aime Elvis, Ndungutse Patrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ontechnologies/ap-fasm/issues"
+  },
+  "homepage": "https://github.com/ontechnologies/ap-fasm#readme"
+}
