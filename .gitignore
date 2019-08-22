@@ -61,3 +61,7 @@ typings/
 .next
 .vscode
 .idea
+
+
+# enviroment variable configuration file
+config.json
