@@ -1,14 +1,14 @@
-import * as express from 'express';
-import * as bodyParser from 'body-parser';
-import morgan from 'morgan'
+import express from 'express';
+import userRoutes from './routes/users';
+import vendorRoutes from './routes/vendors';
+import categoryRoutes from './routes/assetgroup';
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
+app.use(userRoutes);
+app.use(vendorRoutes);
+app.use(categoryRoutes);
 
-app.use(morgan('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlenconded({ extended: true }));
 
-
-
-const PORT = procces.env.PORT || 3000;
-app.listen(PORT, () => console.log('App is listnening on port `{PORT}`'));
+export default app;
